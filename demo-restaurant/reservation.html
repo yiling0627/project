@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Reservation | Demo</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Courgette|Dancing+Script|Lobster|Lobster+Two|Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="css/reservation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/mediaQuery-reservation.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="vender/jquery-3.2.1.min.js"></script>
+    <script src="vender/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="vender/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <!--nav bar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div id="top"></div>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" alt=""></a>
+            </div>
+            <!--links-->
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="animated fadeInLeft"><a href="index.html">Home</a></li>
+                    <li class="dropdown animated fadeInLeft">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Customer<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="animated fadeInLeft"><a  id="signup" href="signup.html">Sign Up</a></li>
+                            <li class="animated fadeInLeft"><a  id="login" href="login.html">Log In</a></li>
+                            <!--<li class="animated fadeInLeft"><a href="#">Message</a></li>-->
+                        </ul>
+                    </li>
+                    <li class="animated fadeInLeft"><a href="menu.html">Menu</a></li>
+                    <li class="active animated fadeInLeft"><a href="reservation.html">Reservation</a></li>
+                    <li class="animated fadeInLeft"><a id="user" href="login.html"></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--title-->
+    <div class="header">
+        <img src="img/reservation-title.jpg" alt="" style="width: 100%;height: 100%">
+        <div class="for-opacity"></div>
+        <div class="content-text">
+            <h1>Reservation Now</h1>
+            <p>
+                Make a reservation in one of the best restaurants of Italian cuisine.
+                It is pretty simple to organize a romantic dinner for two or a party for a company of friends or co-workers.
+                Make a reservation in one of the best restaurants of Italian cuisine.
+                Here you have a good possibility to discover our menu before you come to us and order something.
+            </p>
+        </div>
+    </div>
+    <!--view fo the restaurant-->
+    <div class="restaurant-review">
+        <h1>Dining Space</h1>
+        <p>75 seats for 75 guests are all at your disposal.
+            Organize a party for a huge company and have fun in the Whitehouse.
+            Show your friends the real world of European cuisine and especially Italian vibes.
+        </p>
+        <div class="view">
+            <div class="item no1">
+                <img src="img/view-1.jpg" alt="" style="width: 100%;height: 100%">
+                <!--<h4>You can also impress your boss by choosing the best place for corporate party with your co-workers.</h4>-->
+            </div>
+            <div class="item no2">
+                <img src="img/view-2.jpg" alt="" style="width: 100%;height: 100%">
+                <!--<h4>Call or text all friends from your list and make sure they wear special clothes tonight. </h4>-->
+            </div>
+            <div class="item no3">
+                <img src="img/view-3.jpg" alt="" style="width: 100%;height: 100%">
+                <!--<h4>We can help you to organize a secular reception, probably the finest one you have ever had in your life.</h4>-->
+            </div>
+        </div>
+    </div>
+    <!--contant us-->
+    <div class="contact">
+        <label>Contact Us</label>
+        <form action="/reservation" method="post">
+            <input type="text" id="fname" name="fname" placeholder="First Name">
+            <input type="text" id="lname" name="lname" placeholder="Last Name">
+            <textarea name="message" id="message" placeholder="Make the reservation"></textarea>
+            <br>
+            <button>send</button>
+        </form>
+    </div>
+    <hr style="margin: 55% 5% 0; border: 2px black solid">
+    <!--footer-->
+    <div class="footer">
+        <h1>716-4710548</h1>
+        <h2>Address:5801 Nicholson Ln</h2>
+        <h3>Monday — Thursday:  8am — 11pm;   Friday — Sunday: 11am — 11pm</h3>
+        <div class="social-media">
+            <a class="facebook"></a>
+            <a class="twitter"></a>
+            <a class="google"></a>
+            <a class="wechat"></a>
+        </div>
+        <h4>yiling© 2017.  Privacy Policy​​</h4>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var app = angular.module('myApp',[])
+        app.controller('ctrl',['$scope',function ($scope) {
+        }])
+    </script>
+    <script src="vender/slider.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

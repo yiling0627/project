@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weather widget</title>
+    <link rel="icon" href="weather.png">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div class = "main">
+        <img alt="background" width="600px" height="350px">
+        
+        <div class="left">
+            <div class="left-1">
+                <p id="time"></p>
+            </div>
+            <div class="left-2">
+                <p id="state"></p> 
+                <p id="city"></p> 
+                <p id="zip"></p>
+                <p id="weather"></p>
+            </div>
+        </div>
+        
+        <canvas id="icon"></canvas>
+        
+        <div class="right">
+            <div class="right-1">
+            </div>
+            
+            <div class="right-2">
+               <div id="temp"></div> 
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <script src="js/weather.js"></script>
+    <script src="js/skycons.js"></script>
+</body>
+</html>

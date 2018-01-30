@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home | Demo</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Courgette|Dancing+Script|Lobster|Lobster+Two|Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="vender/jquery-3.2.1.min.js"></script>
+    <script src="vender/smooth-scroll.min.js"></script>
+    <script src="vender/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="vender/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" alt=""></a>
+        </div>
+        <!--links-->
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="animated fadeInLeft"><a href="index.html">Home</a></li>
+                <li class="active dropdown animated fadeInLeft">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Customer<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="animated fadeInLeft"><a  id="signup" href="signup.html">Sign Up</a></li>
+                        <li class="animated fadeInLeft"><a  id="login" href="login.html">Log In</a></li>
+                        <!--<li class="animated fadeInLeft"><a href="#">Message</a></li>-->
+                    </ul>
+                </li>
+                <li class="animated fadeInLeft"><a href="menu.html">Menu</a></li>
+                <li class="animated fadeInLeft"><a href="reservation.html">Reservation</a></li>
+                <li class="animated fadeInLeft"><a id="user"></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="header">
+                <!--two header button-->
+                <ul class="tab-group">
+                    <li class="tab"><a class="active sign-up" href="signup.html">Sign Up</a></li>
+                    <li class="tab"><a class="log-in" href="login.html">Log In</a></li>
+                </ul>
+            </div>
+
+            <hr style="color:white;margin:0;">
+
+            <!--sign for free-->
+            <div class="title-sign">
+                <h1>Sign up for free</h1>
+            </div>
+
+            <!--sign up-->
+            <div class="container signup" ng-app="myApp" ng-controller="ctrl">
+                <form action="/signup" name="myForm" method="post" novalidate>
+                    <!--username-->
+                    <div class="form-group" ng-class="{ 'has-error' : myForm.user.$invalid && !myForm.user.$pristine }">
+                        <!--                            <label>username</label>-->
+                        <input type="text" name="email" class="form-control" placeholder="Enter username"
+                               ng-model="username" ng-minlength="3" ng-maxlength="10"
+                               ng-pattern="/^[A-z][A-z0-9]*$/" required>
+                        <span ng-show="myForm.user.$error.required && myForm.user.$dirty">username is required</span>
+                        <span ng-show="!myForm.user.$error.minlength && !myForm.user.$error.maxlength
+                                    && myForm.user.$error.pattern && myForm.user.$dirty">
+                                    must start with a letter, and contain letters &amp; numbers only.
+                        </span>
+                        <span ng-show="myForm.user.$error.minlength">username is too short</span>
+                        <span ng-show="myForm.user.$error.maxlength">username is too long</span>
+                    </div>
+                    <!--password-->
+                    <div class="form-group" ng-class="{ 'has-error' : myForm.password.$invalid && !myForm.password.$pristine }">
+                        <!--                            <label>password</label>-->
+                        <input type="password" name="password" class="form-control" placeholder="Enter password"
+                               ng-model="password" ng-minlength="6" ng-maxlength="24"
+                               ng-pattern="/(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z])/" required>
+                        <span ng-show="myForm.password.$error.required && myForm.password.$dirty">
+                                password is required
+                            </span>
+                        <span ng-show="myForm.password.$error.minlength">password is too short</span>
+                        <span ng-show="myForm.password.$error.maxlength">password is too long</span>
+                        <span ng-show="!myForm.password.$error.minlength && !myForm.password.$error.maxlength
+                                        && myForm.password.$error.pattern && myForm.password.$dirty">
+                                         Must contain one lower &amp; uppercase letter, and one non-alpha character <br>
+                                         (a number or a symbol.)
+                        </span>
+                    </div>
+
+                    <!--confirm password-->
+                    <div class="form-group" ng-class="{ 'has-error' : myForm.confirm.$invalid && !myForm.confirm.$pristine }">
+                        <!--                            <label>confirm password</label>-->
+                        <input type="password" name="confirm" class="form-control" placeholder="Enter password"
+                               ng-model="confirm">
+                        <span ng-show="(confirm != password) && !myForm.confirm.$pristine">password do not match</span>
+                    </div>
+
+                    <!--email-->
+                    <!--<div class="form-group"ng-class="{ 'has-error' : myForm.email.$invalid && !myForm.email.$pristine }">-->
+                        <!--&lt;!&ndash;                            <label>email</label>&ndash;&gt;-->
+                        <!--<input type="email" name="email" class="form-control" placeholder="Enter email"-->
+                               <!--ng-model="email" required>-->
+                        <!--<span ng-show="myForm.email.$error.required && myForm.email.$dirty">-->
+                                <!--email is required-->
+                        <!--</span>-->
+                        <!--<span ng-show="myForm.email.$invalid && !myForm.email.$pristine">enter valid email</span>-->
+                    <!--</div>-->
+                    <button type="submit" class="btn btn-primary" ng-disabled="myForm.$invalid">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--video-->
+    <video autoplay loop class="video">
+        <source src="video/Restaurant.mp4" type="video/mp4" />
+    </video>
+
+<script>
+    var app = angular.module('myApp',[])
+    app.controller('ctrl',['$scope',function ($scope) {
+    }])
+</script>
+<script src="vender/slider.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

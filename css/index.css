@@ -1,0 +1,76 @@
+.background{
+    position: fixed;
+    z-index: -100;
+}
+
+.header{
+    opacity: 0.8;
+    width: 50%;
+    height: 100px;
+    margin:0 auto 45px;
+    background-color: red;
+    box-sizing: border-box;
+    color: white;
+    font-family:  'Indie Flower', cursive;
+    font-size: 55px;
+    font-weight: 700;
+    padding-top: 10px;
+    /*padding-left: 150px;*/
+    text-align: center;
+}
+
+
+.center{
+    opacity: 0.8;
+    width: 480px;
+    height: 480px;
+    background-color: black;
+    border-radius: 240px;
+    margin: auto;
+    box-sizing: border-box;
+    padding-top: 90px;
+    /*padding-left: 7.5%;*/
+}
+
+.center .nav{
+    width:300px;
+    height: 300px;
+    box-sizing: border-box;
+    border: 2px grey solid;
+    margin: auto;
+    padding-left: 50px;
+    padding-top: 5px;
+}
+
+.center .nav ul{
+    list-style-type: none;
+}
+
+.center .nav ul li{
+    margin-top: 10px;
+}
+
+.center .nav ul li a{
+    text-decoration: none;
+    font-size: 50px;
+    margin: 10px;
+    color: white;
+}
+.center .nav ul li a:hover,.center .nav-tool ul li a:hover{
+    cursor: pointer;
+}
+
+.center .nav-tool{
+    display: none;
+    padding-left: 100px;
+    padding-top: 15px;
+}
+.center .nav-tool ul{
+    list-style-type: none;
+}
+.center .nav-tool ul li a{
+    text-decoration: none;
+    font-size: 50px;
+    margin: 10px;
+    color: white;
+}

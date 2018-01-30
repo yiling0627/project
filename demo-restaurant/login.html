@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home | Demo</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Courgette|Dancing+Script|Lobster|Lobster+Two|Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="vender/jquery-3.2.1.min.js"></script>
+    <script src="vender/smooth-scroll.min.js"></script>
+    <script src="vender/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="vender/font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div id="top"></div>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" alt=""></a>
+        </div>
+        <!--links-->
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="animated fadeInLeft"><a href="index.html">Home</a></li>
+                <li class="active dropdown animated fadeInLeft">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Customer<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li class="animated fadeInLeft"><a  id="signup" href="signup.html">Sign Up</a></li>
+                        <li class="animated fadeInLeft"><a  id="login" href="login.html">Log In</a></li>
+                        <!--<li class="animated fadeInLeft"><a href="#">Message</a></li>-->
+                    </ul>
+                </li>
+                <li class="animated fadeInLeft"><a href="menu.html">Menu</a></li>
+                <li class="animated fadeInLeft"><a href="reservation.html">Reservation</a></li>
+                <li class="animated fadeInLeft"><a id="user"></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <!-- Modal -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="header">
+                <!--two header button-->
+                <ul class="tab-group">
+                    <li class="tab"><a class="sign-up" href="signup.html">Sign Up</a></li>
+                    <li class="tab"><a class="active log-in" href="login.html">Log In</a></li>
+                </ul>
+            </div>
+
+            <hr style="color:white;margin:0;">
+
+            <!--welcome back-->
+            <div class="title-log">
+                <h1>Welcome back</h1>
+            </div>
+
+            <!--log in-->
+            <div class="container login" ng-app="myApp" ng-controller="ctrl">
+                <form action="/login" method="post" name="myForm" novalidate>
+                    <!--username-->
+                    <div class="form-group" ng-class="{ 'has-error' : myForm.user.$invalid && !myForm.user.$pristine }">
+                        <input type="text" name="email" class="form-control" placeholder="Enter username"
+                               ng-model="username">
+                    </div>
+                    <!--password-->
+                    <div class="form-group" ng-class="{ 'has-error' : myForm.password.$invalid && !myForm.password.$pristine }">
+                        <input type="password" name="password" class="form-control" placeholder="Enter password"
+                               ng-model="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary" ng-disabled="myForm.$invalid">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--video-->
+    <video autoplay loop class="video">
+        <source src="video/Restaurant.mp4" type="video/mp4" />
+    </video>
+<script>
+    var app = angular.module('myApp',[])
+    app.controller('ctrl',['$scope',function ($scope) {
+    }])
+</script>
+<script src="vender/slider.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body{
+    /*background-color: #222;*/
+    /*color: white;*/
+}
+.main{
+    border: 1px white solid;
+    width:75%;
+    height: 900px;
+    margin: 3% auto;
+    box-shadow: 1px 1px 30px #000000;
+}
+.main .left{
+    float: left;
+    background-color: #222;
+    font-family: 'Amatic SC', cursive;
+    border: 4px white solid;
+    width: 35%;
+    height: 900px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+#title{
+    font-size: 10px;
+    margin: 0;
+}
+.main .left img{
+    margin-top: 8%;
+    width:70%;
+    border: 1px white solid;
+    border-radius: 100px;
+}
+.main .left .social{
+    /*border: 1px red solid;*/
+    box-sizing: border-box;
+}
+.main .left .social ul{
+    list-style-type: none;
+    margin-left: -50px;
+    margin-top: 1%;
+}
+.main .left .social ul li{
+    text-align: center;
+}
+.main .left .social ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.fa-google{
+    color: red;
+}
+.fa-linkedin{
+    color: #00ABE3;
+}
+.fa-weixin{
+    color: #26ad45;
+}
+.main .left .social ul hr{
+    border: 0;
+    height:1px;
+    background-color: white;
+    color: white;
+    width: 60%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.main .left h5{
+    margin: 0;
+    font-size: 26px;
+}
+.main .left .mailto{
+    color: white;
+    font-size: 20px;
+}
+
+
+.main .right{
+    float: right;
+    width: 65%;
+    height: 900px;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
+    /*background-image: url("../img/coding-bg.png");*/
+    /*background-size: cover;*/
+    /*background-image: url("../img/coding-bg.png");*/
+    /*background-size: 100% 100%;*/
+    /*background-attachment: fixed;*/
+    /*background-repeat: no-repeat;*/
+}
+.main .right p{
+    font-size: 11px;
+}

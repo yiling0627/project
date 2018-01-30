@@ -1,0 +1,101 @@
+.modal-content{
+    top:110px;
+    background-color: black;
+    opacity: 0.8;
+}
+.modal-content .login, .modal-content .signup{
+    /*display: none;*/
+}
+.modal-content .title-sign,.modal-content .title-log{
+    /*display: none;*/
+}
+.modal-content .header{
+    width: 100%;
+    height: 100px;
+    /*    border: 2px green solid;*/
+    overflow: hidden;
+}
+.modal-content ul{
+    list-style-type: none;
+}
+.modal-content ul li{
+    float: left;
+}
+.modal-content ul li .active{
+    color: white;
+}
+.modal-content ul li a{
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 170px;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+    border: 3px #948158 solid;
+    margin-top: 30px;
+    padding-top: 6px;
+    color: #948158;
+    font-family: 'Lobster', cursive;
+}
+.modal-content ul li a:hover{
+    color:white;
+    background: black;
+}
+.modal-content ul li .sign-up{
+    margin-left: 90px;
+}
+.modal-content ul li .active{
+    color: white;
+}
+.modal-content .title-log{
+    width: 100%;
+    height: 80px;
+    /*    border: 1px white solid;*/
+    text-align: center;
+}
+.modal-content .title-sign{
+    width: 100%;
+    height: 80px;
+    /*    border: 1px white solid;*/
+    text-align: center;
+}
+.modal-content .title-log h1,.modal-content .title-sign h1{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.modal-content .form-control{
+    width: 40%;
+}
+
+.modal-content .container{
+    margin-left: 10%;
+    margin-top: -10px;
+
+}
+.modal-content .container .btn-primary {
+    color: black;
+    border: 1px white solid;
+    background-color: #948158;
+    font-family: 'Dancing Script', cursive;
+}
+.modal-content .container .btn{
+    margin-bottom: 10px;
+    margin-left: 16%;
+}
+
+.modal-content .container form span{
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+
+/*video*/
+.video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+}

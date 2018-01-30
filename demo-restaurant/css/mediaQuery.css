@@ -1,0 +1,266 @@
+/*------------------------------------------------------*/
+/* RESPONSIVE
+/*------------------------------------------------------*/
+
+/*navigation-bar*/
+/*navigation-bar*/
+/*navigation-bar*/
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover {
+        color: #948158;
+    }
+    .navbar .container-fluid .navbar-nav li{
+        text-align: center;
+    }
+}
+
+/*slider*/
+/*slider*/
+/*slider*/
+/*slider*/
+@media (min-width: 1600px) {
+    .content-right h1{
+        font-size: 700%;
+    }
+    .content-right p{
+        font-size: 250%;
+        font-weight: 700;
+    }
+    .level-2-text h1{
+        margin-top: 15%;
+        font-size: 800%;
+    }
+    .level-2-text p{
+        margin-top: 10%;
+        font-size: 300%;
+        font-weight: 700;
+    }
+}
+@media (max-width: 991px) {
+    .slide-text h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .slide-text > p {
+
+        font-size: 18px;
+    }
+
+    .content-right h1 {
+        font-size: 350%;
+    }
+
+    .content-right p {
+        font-size: 120%;
+        font-weight: 500;
+    }
+
+    .content-right .content-btn {
+        width: 100px;
+        height: 40px;
+        padding-top: 1px;
+    }
+
+    .level-2-text h1 {
+        font-size: 400%;
+    }
+
+    .level-2-text p {
+        margin-top: 3%;
+        font-size: 150%;
+        font-weight: 500;
+    }
+
+    .content-level-3 h1 {
+        margin-top: 3%;
+        font-size: 400%;
+    }
+
+    .content-level-3 p {
+        font-size: 130%;
+    }
+
+    .accordian {
+        width: 600px;
+        height: 240px;
+        margin: 3% auto;
+    }
+
+    .accordian li {
+        width: 100px;
+    }
+
+    .accordian li img {
+        width: 600px;
+        height: 240px;
+    }
+}
+/*---------- MEDIA 480px ----------*/
+@media  (max-width: 768px) {
+    .slide-text {
+        padding: 10px 50px;
+    }
+    .slide-text h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 10px;
+    }
+    .slide-text > p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .control-round .carousel-control{
+        display: none;
+    }
+    .content-right h1{
+        font-size: 200%;
+        margin-top: 10%;
+    }
+    .content-right p{
+        font-size: 102%;
+        font-weight: 400;
+    }
+    .content-right .content-btn{
+        width: 80px;
+        height: 30px;
+        padding-top: 1px;
+        font-size: 110%;
+    }
+    .level-2-text h1{
+        font-size: 350%;
+    }
+    .level-2-text p{
+        margin-top: 4%;
+        font-size: 140%;
+        font-weight: 300;
+    }
+    .top-btn{
+        margin-top: 80%;
+    }
+    .top-btn a{
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+@media  (max-width: 480px) {
+    .slide-text {
+        padding: 10px 30px;
+    }
+    .slide-text h1 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 5px;
+    }
+    .slide-text > p {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+    .slide-text > a.btn-default,
+    .slide-text > a.btn-primary {
+        font-size: 10px;
+        line-height: 10px;
+        margin-right: 10px;
+        text-align: center;
+        padding: 10px 15px;
+    }
+    .indicators-line > .carousel-indicators{
+        display: none;
+    }
+    .content-left{
+        margin:23% 0 23% 5%;
+    }
+    .content-right h1{
+        font-size: 200%;
+        margin-top: 0;
+    }
+    .content-right p{
+        font-size: 90%;
+        font-weight: 400;
+    }
+    .content-right .content-btn{
+        width: 70px;
+        height: 30px;
+        padding-top: 3px;
+        font-size: 90%;
+    }
+    .level-2-text{
+        margin: -55% 13%;
+        width: 80%;
+    }
+    .level-2-text h1{
+        font-size: 200%;
+    }
+    .level-2-text p{
+        font-size: 90%;
+        font-weight: 200;
+    }
+    .content-level-3 h1 {
+        margin-top: 5%;
+        font-size: 250%;
+    }
+    .content-level-3 .content-btn {
+        width: 60px;
+        height: 30px;
+        font-size: 80%;
+        padding-top: 4px;
+        margin: 1% auto;
+    }
+    .content-level-3 p {
+        font-size: 90%;
+    }
+    .accordian {
+        width: 300px;
+        height: 120px;
+        margin: 3% auto;
+    }
+    .accordian li {
+        width: 50px;
+    }
+    .accordian li img {
+        width: 300px;
+        height: 120px;
+    }
+    .content-level-4 h1{
+        color: #948158;
+        font-size: 200%;
+        font-weight: 400;
+        font-family: 'Dancing Script', cursive;
+    }
+    .content-level-4 h4{
+        font-size: 70%;
+        font-weight: 400;
+        font-family: 'Dancing Script', cursive;
+    }
+    .content-level-4 .team .item{
+        margin: 1% 1%;
+    }
+    .footer{
+        margin-top: 60%;
+        height: 300px;
+    }
+    .footer h1{
+        margin-top: 50px;
+        font-size: 200%;
+    }
+    .footer h2{
+        font-size: 100%;
+    }
+    .footer h3{
+        font-size: 100%;
+    }
+    .top-btn{
+        margin-top: 110%;
+    }
+    .top-btn a{
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}

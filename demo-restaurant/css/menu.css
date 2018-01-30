@@ -1,0 +1,260 @@
+
+/*navigation bar*/
+.navbar-inverse{
+    background-color: black;
+    border-radius: 0;
+}
+.navbar .container-fluid .navbar-header .navbar-brand{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 50px;
+    background-color: white;
+}
+.navbar .container-fluid .navbar-header .navbar-brand .logo{
+    width: 40px;
+    height: 40px;
+    margin-top: -9px;
+    margin-left: -6px;
+}
+.navbar .container-fluid .navbar-nav{
+    font-family: 'Lobster', cursive;
+    font-size: 150%;
+}
+.navbar .container-fluid .navbar-nav .active a{
+    color: #948158; !important;
+}
+.navbar .container-fluid .navbar-nav li a:hover,
+.navbar .container-fluid .navbar-nav li a:active,
+.navbar .container-fluid .navbar-nav li a:focus{
+    color: #948158; !important;
+}
+.navbar .container-fluid .navbar-nav a{
+    margin-right: 20px;
+}
+.navbar .container-fluid .navbar-nav .dropdown-menu{
+    background-color: black; !important;
+}
+.navbar .container-fluid .navbar-nav .dropdown-menu a{
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    color: white;!important;
+    opacity: 0.7;
+}
+.navbar-inverse .navbar-toggle:hover{
+    border: 1px #948158 solid;
+}
+#user{
+    cursor: pointer;
+}
+#user:before{
+    content: '\f007';
+    font-family: 'FontAwesome';
+}
+
+
+
+
+/*menu title*/
+.header{
+    /*position: absolute;*/
+    text-align: center;
+}
+.header .for-opacity{
+    position: absolute;
+    top:0;
+    background-color: black;
+    opacity: 0.6;
+    width: 100%;
+    padding-bottom: 55.55%;
+}
+.header .content-text{
+    position: absolute;
+    top:200px;
+    width: 100%;
+}
+.header h1{
+    font-size: 650%;
+    font-weight: 700;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+.header p{
+     font-size: 120%;
+     margin: 2% 5%;
+     color: white;
+     font-weight: 100;
+ }
+
+
+/*menu content*/
+.menu-content{
+    position: absolute;
+    width: 100%;
+    height:0;
+    padding-bottom: 90%;
+    /*overflow: hidden;*/
+    /*background-color: #00ABE3;*/
+    text-align: center;
+}
+.menu-content h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 600%;
+    font-weight: 700;
+    margin-top: 8%;
+    color: #948158;
+}
+.menu-content .entree{
+    width: 100%;
+    height: 0;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 25%;
+    /*background-color: #00ABE3;*/
+    background: url("../img/entree-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu-content .breakfast{
+    width: 100%;
+    height: 0;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 25%;
+    /*background-color: #00ABE3;*/
+    background: url("../img/breakfast-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu-content .drink{
+    width: 100%;
+    height: 0;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 25%;
+    /*background-color: #00ABE3;*/
+    background: url("../img/drink-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#entree-title{
+    font-size: 600%;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+.menu-content .col-lg-6{
+    /*border: 1px red solid;*/
+    height: 500px;
+    text-align: left;
+}
+.menu-content .col-lg-6 p{
+    margin: 3% 5%;
+    font-size: 150%;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+}
+.menu-content .col-lg-6 span{
+    font-size: 70%;
+    font-weight: 400;
+    font-family:Sathu;
+}
+
+
+
+
+
+
+/*footer*/
+.footer{
+    padding-top: 2%;
+    width: 100%;
+    height: 400px;
+    background: url("../img/wool.png");
+}
+.footer h1{
+    margin-top: 80px;
+    text-align: center;
+    color: #948158;
+    font-size: 300%;
+    font-family: 'Dancing Script', cursive;
+}
+.footer h2{
+    text-align: center;
+    color: white;
+    font-size: 110%;
+    font-family: 'Dancing Script', cursive;
+}
+.footer h3{
+    text-align: center;
+    color: white;
+    font-size: 110%;
+    font-family: 'Dancing Script', cursive;
+    opacity: 0.5;
+}
+.footer .social-media{
+    text-align: center;
+}
+.footer .social-media a{
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px #999;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: normal;
+    padding-top: 14px;
+    margin-top: 10px;
+    color: #fff;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+}
+.footer .social-media .facebook:before{
+    font-family: "FontAwesome";
+    content: "\f09a";
+}
+.footer .social-media .facebook:hover{
+    color: #4060A5;
+    background: #fff;
+    text-decoration: none;
+}
+.footer .social-media .twitter:before{
+    font-family: "FontAwesome";
+    content: "\f099";
+}
+.footer .social-media .twitter:hover{
+    color: #00ABE3;
+    background: #fff;
+    text-decoration: none;
+}
+.footer .social-media .google:before{
+    font-family: "FontAwesome";
+    content: "\f0d5";
+}
+.footer .social-media .google:hover{
+    color: #e64522;
+    background: #fff;
+    text-decoration: none;
+}
+.footer .social-media .wechat:before{
+    font-family: "FontAwesome";
+    content: "\f1d7";
+}
+.footer .social-media .wechat:hover{
+    color: #26ad45;
+    background: #fff;
+    text-decoration: none;
+}
+.footer h4{
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    font-size: 90%;
+    font-family: 'Courgette', cursive;
+    font-weight: 100;
+}

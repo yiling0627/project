@@ -1,0 +1,74 @@
+.social-media{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.social-media a{
+    display: inline-block;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px #999;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+}
+.facebook:before{
+    font-family: "FontAwesome";
+    content: "\f09a";
+}
+.facebook:hover{
+    color: #4060A5;
+    background: #fff;
+    text-decoration: none;
+}
+.twitter:before{
+    font-family: "FontAwesome";
+    content: "\f099";
+}
+.twitter:hover{
+    color: #00ABE3;
+    background: #fff;
+    text-decoration: none;
+}
+.google:before{
+    font-family: "FontAwesome";
+    content: "\f0d5";
+}
+.google:hover{
+    color: #e64522;
+    background: #fff;
+    text-decoration: none;
+}
+.pinterest:before{
+    font-family: "FontAwesome";
+    content: "\f0d2";
+}
+.pinterest:hover{
+    color: #cb2027;
+    background: #fff;
+    text-decoration: none;
+}
+.tumblr:before{
+    font-family: "FontAwesome";
+    content: "\f173";
+}
+.tumblr:hover{
+    color: #3a5876;
+    background: #fff;
+    text-decoration: none;
+}
+.wechat:before{
+    font-family: "FontAwesome";
+    content: "\f1d7";
+}
+.wechat:hover{
+    color: #26ad45;
+    background: #fff;
+    text-decoration: none;
+}
